@@ -1,0 +1,103 @@
+/* Body Styles */
+body {
+    background: url('anime-boy-chill-digital-art-4k-wallpaper-uhdpaper.com-284@0@j.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Captcha Display */
+#captchaDisplay {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+/* Character Counter */
+#charCounter {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+}
+
+/* General Spacing */
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .card {
+        padding: 20px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+    }
+
+    .form-control {
+        font-size: 13px;
+    }
+}
+.char-counter {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #555;
+    display: block;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card p-4 shadow" style="width: 100%; max-width: 400px;">
+        <h2 class="text-center mb-4">Sign Up</h2>
+        <form id="signupForm" novalidate>
+            <div class="mb-3">
+                <label for="fullname" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Masukkan nama lengkap">
+            </div>
+            <div class="mb-3">
+                <label for="studentId" class="form-label">ID Siswa</label>
+                <input type="text" class="form-control" id="studentId" placeholder="Masukkan ID siswa">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Masukkan password">
+            </div>
+            <div class="mb-3">
+                <label for="captcha" class="form-label">Captcha</label>
+                <div class="d-flex align-items-center">
+                    <input type="text" class="form-control me-2" id="captchaInput" placeholder="Masukkan captcha">
+                    <span id="captchaDisplay" class="border p-2 bg-light"></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <span id="charCounter" class="text-muted" style="display: none;">0 karakter</span>
+            </div>
+            
+            <button type="button" class="btn btn-primary w-100" onclick="validateForm()">Daftar</button>
+        </form>
+    </div>
+
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorModalLabel">Error</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
